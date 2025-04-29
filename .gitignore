@@ -1,0 +1,85 @@
+.cache
+.cached 
+.todo
+build/
+*log
+.DS_Store
+saving/
+src/dependency/raylib/raylib 
+src/dependency/yamlcpp/yamlcpp
+.vs
+.vscode
+.vscode/settings.json
+.vscode/settings.json
+countline.py
+*.log
+lazy-lock.json
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.env/
+*.venv/
+env/
+venv/
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Lua
+*.luac
+*.out
+
+# C++
+*.o
+*.obj
+*.so
+*.dll
+*.exe
+*.out
+*.a
+*.d
+*.dSYM/
+build/
+bin/
+*.log
+
+# Neovim Config
+# (assuming you version dotfiles, but ignore runtime/backup/cache)
+.netrwhist
+backup/
+undo/
+swap/
+session/
+cache/
+*.swp
+*.swo
+*.swn
+*.tmp
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# General backup files
+*~
+*.bak
+*.tmp
+
+*.env
+.env
