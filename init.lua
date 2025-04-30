@@ -1,6 +1,3 @@
-require("nheonhim.keymap.unmap")
-require("mock-setup.config.mapping.mode")
-require("mock-setup.config.mapping.moving")
+require("nheonhim")
 require("config.lazy")
 require("config.format")
-require("nheonhim")
