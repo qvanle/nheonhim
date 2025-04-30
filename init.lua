@@ -1,4 +1,4 @@
-require("mock-setup.config.unmap")
+require("nheonhim.keymap.unmap")
 require("mock-setup.config.mapping.mode")
 require("mock-setup.config.mapping.moving")
 require("config.lazy")
