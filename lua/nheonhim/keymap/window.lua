@@ -23,8 +23,7 @@ bind_key('n', '<leader>ws', ':split<CR>', opts)        -- Horizontal split
 bind_key('n', '<leader>wv', ':vsplit<CR>', opts)       -- Vertical split
 
 -- === Window Closing ===
-bind_key('n', '<c-q>', ':close<CR>', opts)        -- Close current window
-bind_key('n', '<c-s-q>', ':bd<CR>', opts)        -- Close current window
+bind_key('n', '<c-e>', ':bd<CR>', opts)        -- Close current window
 
 -- === Window Resizing ===
 bind_key('n', '<C-Up>', ':resize -2<CR>', opts)        -- Shrink vertically
