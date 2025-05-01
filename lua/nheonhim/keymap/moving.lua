@@ -30,10 +30,10 @@ bind_key('n', 'gg', key('gg'), opts)
 bind_key('n', 'GG', key('G'), opts)
 
 -- , → forward to end of word (e)
-bind_key('n', ',', key('e'), opts)
+bind_key('n', '.', key('e'), opts)
 
 -- . → backward to beginning of word (b)
-bind_key('n', '.', key('b'), opts)
+bind_key('n', ',', key('b'), opts)
 
 -- p → jump to matching pair (via `%`)
 bind_key('n', 'p', key('%'), opts)
