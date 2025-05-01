@@ -4,9 +4,9 @@ local termcodes = vim.api.nvim_replace_termcodes
 local opts = { noremap = true, silent = true }
 
 local function key(k)
-  return function()
-    feedkeys(termcodes(k, true, false, true), 'n', false)
-  end
+    return function()
+        feedkeys(termcodes(k, true, false, true), 'n', false)
+    end
 end
 
 -- Append a line below (like 'o' but stay in normal mode)
@@ -29,23 +29,23 @@ bind_key('n', 'x.', key('cb<Esc>'), opts)
 
 -- Save file and notify
 bind_key({ 'n', 'i' }, '<C-o>', function()
-  feedkeys(termcodes('<ESC>', true, false, true), 'n', false)
-  vim.cmd('write')  -- save file
-  local filename = vim.fn.expand('%:t')  -- get filename only
-  vim.notify('Saved file: ' .. filename, vim.log.levels.INFO, { title = 'Save File' })
+    feedkeys(termcodes('<ESC>', true, false, true), 'n', false)
+    vim.cmd('write')  -- save file
+    local filename = vim.fn.expand('%:t')  -- get filename only
+    vim.notify('Saved file: ' .. filename, vim.log.levels.INFO, { title = 'Save File' })
 end, opts)
 
 -- Duplicate current line with 'ee'
 bind_key('n', 'ee', function()
-  local line = vim.api.nvim_get_current_line()
-  local row = vim.api.nvim_win_get_cursor(0)[1]
-  vim.api.nvim_buf_set_lines(0, row, row, false, { line })
+    local line = vim.api.nvim_get_current_line()
+    local row = vim.api.nvim_win_get_cursor(0)[1]
+    vim.api.nvim_buf_set_lines(0, row, row, false, { line })
 end, opts)
 
 -- Delete current line with 'EE'
 bind_key('n', 'EE', function()
-  local row = vim.api.nvim_win_get_cursor(0)[1]
-  vim.api.nvim_buf_set_lines(0, row - 1, row, false, {})
+    local row = vim.api.nvim_win_get_cursor(0)[1]
+    vim.api.nvim_buf_set_lines(0, row - 1, row, false, {})
 end, opts)
 
 bind_key({ 'n', 'i' }, '<C-;>', function()
@@ -66,3 +66,4 @@ bind_key('n', 'cc', '"+yy', opts)
 bind_key('n', 'vv', key('"+p'), opts)
 bind_key('n', 'VV', key('"+P'), opts)
 
+bind_key('n', '<leader>be', key('gg=GG'), opts)
