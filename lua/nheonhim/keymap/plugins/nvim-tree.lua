@@ -13,6 +13,6 @@ end
 
 
 bind_key('n', '<leader>ff', key('<cmd>NvimTreeToggle<CR>'), opts)
-bind_key('n', '<c-f>', key('<cmd>NvimTreeToggle<CR>'), opts)
-bind_key('i', '<c-f>', key('<Esc><cmd>NvimTreeToggle<CR>'), opts)
-bind_key('v', '<c-f>', key('<Esc><cmd>NvimTreeToggle<CR>'), opts)
+bind_key('n', '<c-u>', key('<cmd>NvimTreeToggle<CR>'), opts)
+bind_key('i', '<c-u>', key('<Esc><cmd>NvimTreeToggle<CR>'), opts)
+bind_key('v', '<c-u>', key('<Esc><cmd>NvimTreeToggle<CR>'), opts)
