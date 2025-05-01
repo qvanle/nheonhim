@@ -20,8 +20,8 @@ bind_key('n', 't', key('gk'), opts)             -- Up (visual)
 -- === Insert Mode Movement ===
 bind_key('i', '<c-d>', key('<Left>'), opts)         -- Left
 bind_key('i', '<c-n>', key('<Right>'), opts)        -- Right
-bind_key('i', '<c-h>', key('gj'), opts)             -- Down (visual)
-bind_key('i', '<c-t>', key('gk'), opts)             -- Up (visual)
+bind_key('i', '<c-h>', key('<down>'), opts)             -- Down (visual)
+bind_key('i', '<c-t>', key('<up>'), opts)             -- Up (visual)
 
 -- Move to start of file (gg)
 bind_key('n', 'gg', key('gg'), opts)
