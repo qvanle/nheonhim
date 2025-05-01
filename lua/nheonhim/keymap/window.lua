@@ -13,10 +13,10 @@ local function key(k)
 end
 
 -- === Window Navigation ===
-bind_key('n', '<C-s-h>', '<C-w>h', opts) -- Move to left window
-bind_key('n', '<C-s-t>', '<C-w>k', opts) -- Move to upper window (Dvorak-friendly)
-bind_key('n', '<C-s-h>', '<C-w>j', opts) -- Move to lower window
-bind_key('n', '<C-s-n>', '<C-w>l', opts) -- Move to right window
+bind_key('n', '<c-s-d>', '<C-w>h', opts) -- Move to left window
+bind_key('n', '<c-s-t>', '<C-w>k', opts) -- Move to upper window (Dvorak-friendly)
+bind_key('n', '<c-s-h>', '<C-w>j', opts) -- Move to lower window
+bind_key('n', '<c-s-n>', '<C-w>l', opts) -- Move to right window
 
 -- === Window Splits ===
 bind_key('n', '<leader>ws', ':split<CR>', opts)        -- Horizontal split
