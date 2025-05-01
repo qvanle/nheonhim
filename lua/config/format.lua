@@ -43,4 +43,6 @@ opt.signcolumn = 'yes'
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
+opt.laststatus = 3
 
+vim.opt = opt
