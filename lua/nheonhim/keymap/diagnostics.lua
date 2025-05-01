@@ -11,7 +11,7 @@ local function key(k)
 end
 
 -- Jump to previous diagnostic
-bind_key('n', '<c-d>', vim.diagnostic.goto_prev, opts)
+bind_key('n', '<leader><leader>', vim.diagnostic.goto_prev, opts)
 
 -- Jump to next diagnostic
-bind_key('n', '<c-s-d>', vim.diagnostic.goto_next, opts)
+bind_key('n', '!!', vim.diagnostic.goto_next, opts)
