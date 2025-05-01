@@ -10,3 +10,6 @@ require("nheonhim.keymap.visual")
 require("nheonhim.keymap.search")
 require("nheonhim.keymap.window")
 require("nheonhim.keymap.macro")
+
+
+require("nheonhim.keymap.plugins.nvim-tree")
