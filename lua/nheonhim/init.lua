@@ -13,3 +13,4 @@ require("nheonhim.keymap.macro")
 
 
 require("nheonhim.keymap.plugins.nvim-tree")
+require("nheonhim.keymap.plugins.telescope")
