@@ -23,9 +23,9 @@ bind_key('i', '<C-x>', key('<C-h>'), opts)
 bind_key('i', '<C-X>', key('<C-w>'), opts)
 
 -- x,: detele a word (forward)
-bind_key('n', 'x,', key('ce<Esc>'), opts)
+bind_key('n', 'x.', key('ce<Esc>'), opts)
 -- x.: detele a word (backward)
-bind_key('n', 'x.', key('cb<Esc>'), opts)
+bind_key('n', 'x,', key('cb<Esc>'), opts)
 
 -- Save file and notify
 bind_key({ 'n', 'i' }, '<C-o>', function()
