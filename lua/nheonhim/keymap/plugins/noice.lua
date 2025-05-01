@@ -10,4 +10,6 @@ local function key(k)
     end
 end
 
-bind_key('n', '<leader>nm', key('<cmd>Noice dismiss<CR>'), opts)
+bind_key('n', '<leader>nh', key('<cmd>noh<CR><cmd>Noice dismiss<CR>'), opts)
+bind_key('n', '<c-\'>', key('<cmd>noh<CR><cmd>Noice dismiss<CR>'), opts)
+bind_key('i', '<c-\'>', key('<cmd>noh<CR><cmd>Noice dismiss<CR>'), opts)
