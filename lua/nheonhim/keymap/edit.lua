@@ -60,4 +60,8 @@ bind_key('n', 'r', key('r'), opts)
 bind_key('n', 'R', key('R'), opts)
 -- Toggle case of character under cursor with '~'
 bind_key('n', '~', key('~'), opts)
-
+bind_key('n', '<tab>', key('v><ESC>'), opts)
+bind_key('n', '<S-tab>', key('v<<ESC>'), opts)
+bind_key('n', 'cc', '"+yy', opts)
+bind_key('n', 'vv', key('p'), opts)
+bind_key('n', 'VV', key('P'), opts)
