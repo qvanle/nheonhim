@@ -68,3 +68,6 @@ bind_key('n', '(', key('[['), opts)
 -- ) → jump to next paragraph (or function/block)
 bind_key('n', ')', key(']]'), opts)
 
+-- Jump back to previous position with 'uu'
+bind_key('n', 'uu', key('<C-o>'), opts)
+
