@@ -66,4 +66,4 @@ bind_key('n', 'cc', '"+yy', opts)
 bind_key('n', 'vv', key('"+p'), opts)
 bind_key('n', 'VV', key('"+P'), opts)
 
-bind_key('n', '<leader>be', key('gg=GG'), opts)
+bind_key('n', '<leader>bb', key('gg=GG'), opts)
