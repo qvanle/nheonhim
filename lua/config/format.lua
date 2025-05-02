@@ -1,4 +1,4 @@
-opt = vim.opt
+local opt = vim.opt
 
 opt.tabstop = 4
 opt.shiftwidth = 4
@@ -43,7 +43,7 @@ opt.signcolumn = 'yes'
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
-opt.laststatus = 3
+opt.laststatus = 0
 
 vim.opt = opt
 
