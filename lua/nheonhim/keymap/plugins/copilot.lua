@@ -12,5 +12,5 @@ end
 
 
 vim.g.copilot_no_tab_map = true  -- Disable default <Tab> mapping
-vim.api.nvim_set_keymap('i', '<C-a>', 'copilot#Accept()', {expr = true, silent = true})
+vim.cmd[[imap <silent><script><expr> <C-a> copilot#Accept("\<CR>")]]
 
