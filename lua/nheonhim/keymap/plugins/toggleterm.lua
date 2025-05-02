@@ -10,5 +10,6 @@ local function key(k)
     end
 end
 
-bind_key('n', '<c-y>', key("<cmd>ToggleTerm name=<3 size=10<CR>"), opts);
-bind_key('i', '<c-y>', key("<Esc><cmd>ToggleTerm name=<3 size=10<CR>"), opts);
+bind_key('n', '<c-y>', key("<cmd>ToggleTerm name=<3 size=8<CR>"), opts);
+bind_key('i', '<c-y>', key("<Esc><cmd>ToggleTerm name=<3 size=8<CR>"), opts);
+bind_key('t', '<c-y>', key("<Esc><cmd>ToggleTerm name=<3 size=8<CR>"), opts);
