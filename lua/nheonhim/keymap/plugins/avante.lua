@@ -10,4 +10,5 @@ local function key(k)
     end
 end
 
+bind_key('n', '<leader>al', key('<cmd>AvanteClear<CR>'), opts)
 
