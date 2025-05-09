@@ -29,6 +29,7 @@ bind_key('v', 'CC', '"+y', opts)     -- yank to system clipboard
 
 -- Delete selection
 bind_key('v', 'x', 'd', opts)        -- delete selected text
+bind_key('v', '<s-e><s-e>', 'd', opts)        -- delete selected text
 
 -- Toggle case
 bind_key('v', '~', '~', opts)        -- toggle case
